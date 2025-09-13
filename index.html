@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>pumpfights.fun</title>
-    <meta name="description" content="Pump Fights — fighting random viewers till I get knocked the out." />
+    <meta name="description" content="Pump Fights — creator fees fund more fights." />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
@@ -31,28 +31,22 @@
         padding: 16px;
         border-bottom: 1px solid rgba(126,242,154,.2);
         display: flex;
-        justify-content: flex-end;
         align-items: center;
+        justify-content: space-between; /* name on left, links on right */
       }
       .site-name {
-        font-size: 24px;
+        font-size: 26px;
         font-weight: 800;
         color: var(--accent);
       }
-      .nav-links {
-        margin-left: 20px;
-        display: flex;
-        gap: 20px;
-      }
+      .nav-links { display: flex; gap: 20px; }
 
-      .hero {
-        margin: 30px auto;
-      }
+      .hero { margin: 30px auto 10px; }
       .title { font-size: 32px; font-weight: 800; }
       .tagline { color: var(--muted); font-weight: 600; }
 
       .stream {
-        margin: 20px auto;
+        margin: 20px auto 36px;
         background: var(--panel);
         border-radius: 16px;
         border: 1px solid rgba(126,242,154,.2);
@@ -63,31 +57,46 @@
       }
       .placeholder h2 { margin: 0; }
 
-      footer {
-        padding: 20px;
-        color: var(--muted);
-      }
+      /* About section */
+      .about { max-width: 900px; margin: 0 auto 60px; text-align: left; padding: 0 16px; }
+      .about h2 { font-size: 22px; margin: 0 0 10px; }
+      .about p { color: var(--muted); margin: 6px 0; line-height: 1.6; }
+      .about ul { color: var(--muted); margin: 10px 0 0 18px; }
+
+      footer { padding: 20px; color: var(--muted); }
     </style>
   </head>
   <body>
     <header>
       <div class="site-name">pumpfights.fun</div>
-      <div class="nav-links">
+      <nav class="nav-links">
         <a href="https://instagram.com" target="_blank">Instagram</a>
         <a href="https://twitter.com" target="_blank">X</a>
-      </div>
+      </nav>
     </header>
 
     <main>
       <section class="hero">
         <h1 class="title">pump fights</h1>
-        <p class="tagline">fighting random viewers till i get knocked the out.</p>
+        <p class="tagline">creator fees will be used to fund more fights.</p>
       </section>
 
-      <section id="watch" class="stream">
+      <section id="watch" class="stream" aria-label="Live video">
         <div class="placeholder">
           <h2>Video will show here when live</h2>
         </div>
+      </section>
+
+      <section class="about" id="about">
+        <h2>what is this?</h2>
+        <p><strong>pump fights</strong> is a simple stream: when we go live, we fight. when we’re offline, we’re planning the next one.</p>
+        <p><strong>how it’s funded:</strong> a portion of creator fees goes back into the pot to pay for venues, gear, travel, and future cards — basically, more fights.</p>
+        <ul>
+          <li>transparent: we’ll post a short breakdown after each stream.</li>
+          <li>community first: members can suggest matchups and locations.</li>
+          <li>stay safe: trained staff on site and basic rules enforced.</li>
+        </ul>
+        <p>follow on <a href="https://instagram.com" target="_blank">instagram</a> and <a href="https://twitter.com" target="_blank">x</a> for go-live alerts.</p>
       </section>
     </main>
 
