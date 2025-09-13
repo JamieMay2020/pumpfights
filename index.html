@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>pumpfights.fun</title>
+    <meta name="description" content="Pump Fights — fighting random viewers till I get knocked the out." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --bg: #0b0f14;
+        --panel: #141a21;
+        --text: #e6eef7;
+        --muted: #9fb2c8;
+        --accent: #7ef29a;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: 'Inter', system-ui, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        text-align: center;
+      }
+      a { color: var(--muted); text-decoration: none; }
+      a:hover { color: var(--accent); }
+
+      header {
+        padding: 16px;
+        border-bottom: 1px solid rgba(126,242,154,.2);
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+      }
+      .site-name {
+        font-size: 24px;
+        font-weight: 800;
+        color: var(--accent);
+      }
+      .nav-links {
+        margin-left: 20px;
+        display: flex;
+        gap: 20px;
+      }
+
+      .hero {
+        margin: 30px auto;
+      }
+      .title { font-size: 32px; font-weight: 800; }
+      .tagline { color: var(--muted); font-weight: 600; }
+
+      .stream {
+        margin: 20px auto;
+        background: var(--panel);
+        border-radius: 16px;
+        border: 1px solid rgba(126,242,154,.2);
+        display: flex; align-items: center; justify-content: center;
+        text-align: center;
+        height: 70vh;
+        max-width: 900px;
+      }
+      .placeholder h2 { margin: 0; }
+
+      footer {
+        padding: 20px;
+        color: var(--muted);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="site-name">pumpfights.fun</div>
+      <div class="nav-links">
+        <a href="https://instagram.com" target="_blank">Instagram</a>
+        <a href="https://twitter.com" target="_blank">X</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1 class="title">pump fights</h1>
+        <p class="tagline">fighting random viewers till i get knocked the out.</p>
+      </section>
+
+      <section id="watch" class="stream">
+        <div class="placeholder">
+          <h2>Video will show here when live</h2>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>© <span id="year"></span> pumpfights.fun</span>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
