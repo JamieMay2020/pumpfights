@@ -32,7 +32,7 @@
         border-bottom: 1px solid rgba(126,242,154,.2);
         display: flex;
         align-items: center;
-        justify-content: space-between; /* name on left, links on right */
+        justify-content: space-between;
       }
       .site-name {
         font-size: 26px;
@@ -63,6 +63,26 @@
       .about p { color: var(--muted); margin: 6px 0; line-height: 1.6; }
       .about ul { color: var(--muted); margin: 10px 0 0 18px; }
 
+      /* Highlight section for wow effect */
+      .highlight {
+        max-width: 900px;
+        margin: 40px auto 60px;
+        background: var(--panel);
+        border: 1px solid rgba(126,242,154,.25);
+        border-radius: 12px;
+        padding: 20px;
+        text-align: center;
+      }
+      .highlight h2 {
+        font-size: 24px;
+        margin: 0 0 12px;
+        color: var(--accent);
+      }
+      .highlight p {
+        color: var(--muted);
+        margin: 0;
+      }
+
       footer { padding: 20px; color: var(--muted); }
     </style>
   </head>
@@ -70,7 +90,6 @@
     <header>
       <div class="site-name">pumpfights.fun</div>
       <nav class="nav-links">
-        <a href="https://instagram.com" target="_blank">Instagram</a>
         <a href="https://twitter.com" target="_blank">X</a>
       </nav>
     </header>
@@ -96,7 +115,11 @@
           <li>community first: members can suggest matchups and locations.</li>
           <li>stay safe: trained staff on site and basic rules enforced.</li>
         </ul>
-        <p>follow on <a href="https://instagram.com" target="_blank">instagram</a> and <a href="https://twitter.com" target="_blank">x</a> for go-live alerts.</p>
+      </section>
+
+      <section class="highlight">
+        <h2>next fight coming soon</h2>
+        <p>stay tuned for the announcement — streamed right here.</p>
       </section>
     </main>
 
